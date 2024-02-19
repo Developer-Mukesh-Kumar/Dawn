@@ -1,3 +1,4 @@
+.list-menu li:last-child span {color: red;}
 
 .color-Switches ~ .cstmvariantsClick {
   display:none;
