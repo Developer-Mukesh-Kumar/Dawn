@@ -1,0 +1,21 @@
+<div class="pincode-popup-container">
+  <div class="pincode_popup_body">
+    <div class="pincode-popup">
+      <div class="close_btn" id="pincode_close_btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none" style="margin-top: 15px;">
+          <path d="M9.43158 0.998901L1.19629 9.21594M1.19629 0.998901L9.43158 9.21594" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <div>
+        <p class="fw-bold pb-4" style="color: #335d2d;">This product is only available at select Pincodes.</p>
+        <p class="pb-5 delivery__heading" style="color: #335d2d;line-height: normal;font-size: 14px;">Please enter your pincode to see availability and eligibility for Next Day Delivery.</p>
+        <p class="pb-3 pincode__heading" style="color: #335d2d;">Please enter Pincode</p>
+        <div class="d-flex-code">
+          <input class="pincode_input_field" type="text"  maxlength="6" pattern="[1-9][0-9]{5}" onkeypress="if(this.value.length==6) return false;" id="pincode__field" value="">
+          <button class="submit_pincode" type="button" id="match_pincode">Check</button>
+        </div>
+        <p id="invalid__pin"></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,169 @@
+
+.color-Switches ~ .cstmvariantsClick {
+  display:none;
+}
+
+.color-Switches{
+  background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+.coll-wishlist {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 1;
+}
+.coll-wishlist.active .cstm-wishlist-head svg{
+  fill:red;
+}
+nav.header__inline-menu .icon.icon-caret {
+    display: none;
+}
+.collection-images img {
+    border-radius: 10px;
+}
+.mega-menu .mega-menu__list--condensed.leveloneMenu{
+  display:flex;
+  text-align:center;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.card--card.card--media>.card__content{
+  display:none;
+}
+.desktopPincode .Link{
+  border:none;
+  background:none;
+  color:#3f6432;
+  text-align:center; 
+  font-weight: 700;
+}
+.desktopPincode {
+    text-align: center;
+}
+
+/* pincode popup css  */
+.pincode-popup-container {
+    top: 0;
+    background: rgba(0,0,0,.75);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.pincode-popup {
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 450px;
+    width: 100%;
+    bottom: auto;
+    z-index: 99999;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(180deg, rgb(196, 234, 175), white);
+    border-radius: 10px;
+}
+.pincode-popup-container{
+  display:none;
+}
+.pincode-popup-container.d-block{
+  display:block;
+}
+.close_btn {
+    top: -22px;
+    background: #000000;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: -18px;
+    z-index: 999;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.pincode_input_field {
+    border-color: #e8e8e8;
+    padding: 14px 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 70%;
+}
+.submit_pincode {
+    color: #fff;
+    border: 2px solid #000;
+    padding: 14px 10px;
+    font-size: 14px;
+    margin-left: -4px;
+    border-left-style: none;
+    border-top-right-radius: 10px;
+    background:#000;
+    border-bottom-right-radius: 10px;
+    font-weight: 700;
+    width: 30%;
+    z-index: 99999;
+  color:#fff;
+}
+.d-flex-code{
+  display:flex;
+}
+
+/*  */
+.custom_quantity {
+    display: flex;
+    width: 100%;
+}
+.quantity__button_minus, .quantity__button_plus{
+			width:100%;
+			height:40px;
+			background:#fff;
+			border-radius:4px;
+			padding:8px 5px 8px 5px;
+			border:1px solid #ddd;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+		}
+input.quantity__input_value{
+	  height:40px;
+      width: 100%;
+      text-align: center;
+      font-size: 26px;
+	  border:1px solid #ddd;
+	  border-radius:4px;
+      display: inline-block;
+      vertical-align: middle;
+        }	
+
+li.variants_size {
+    /* list-style: none; */
+    border: 1px solid;
+    height: 30px;
+    width: 41px;
+    border-radius: 60%;
+    text-align: center;
+    padding: 3px;
+}
+ul.varient_outer_show {
+    display: flex;
+    list-style: none;
+    flex-wrap:wrap;
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+}
+.variant-button.active{
+  background:#000;
+  color:#fff;
+}
+
+@media screen and (max-width: 749px) {
+  input.quantity__input_value {
+    height: 40px;
+    max-width: 115px;
+  }
+  .quantity__button_minus, .quantity__button_plus {
+    max-width: 35px;
+  }
+}

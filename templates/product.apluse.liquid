@@ -1,0 +1,18 @@
+{% layout none %}
+  {% assign apluseContent = product.selected_variant.metafields.custom.apluse.value %} 
+<div class="page-width">
+   {% if apluseContent %}
+        <div class="grid-content">
+        <div class="image">
+          {{ apluseContent.image | image_url:width:1000 | image_tag }}
+        </div>
+          <div class="text">
+            <p class="aligntext">{{  apluseContent.text }}</p>
+          </div>
+        </div>
+      {% else %}
+     <p>No image</p>
+      {% endif %}
+</div>
+
+  

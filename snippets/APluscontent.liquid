@@ -1,0 +1,25 @@
+{% assign vid = "APluscontent" | append:product.id %}
+<div id={{ vid }}></div>
+
+<!-- <script>
+window.addEventListener('variant:change', () => {
+  var url = new URL(window.location);
+  url.searchParams.append('section_id', 'dynamic-a-plus-content');
+  var cstUrl = url.toString();
+  console.log('url', cstUrl);
+  fetchInfluencerSection(cstUrl);
+});
+
+async function fetchInfluencerSection(variantUrl) {
+let response = await fetch(variantUrl);
+  console.log('response',response);
+// if(!response.ok) throw new Error(response.status);
+// let text = await response.text();
+// let htmlMarkup = new DOMParser()
+// .parseFromString(text,'text/html')
+// .querySelector('#shopify-section-product-dynomic-a-plus-content').innerHTML;
+// let secId = document.querySelector('#id');
+// secid.innerHTML = htmlMarkup;
+
+}
+</script> -->

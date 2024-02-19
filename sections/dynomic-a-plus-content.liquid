@@ -1,0 +1,81 @@
+<div class="mainsection-apluscontent">
+   {% assign apluseContent = product.selected_variant.metafields.custom.apluse.value %} 
+<div class="page-width">
+   {% if apluseContent %}
+        <div class="grid-content">
+        <div class="image">
+          {{ apluseContent.image | image_url:width:1000 | image_tag }}
+        </div>
+          <div class="text">
+            <p class="aligntext">{{  apluseContent.text }}</p>
+          </div>
+        </div>
+      {% else %}
+     <p>No image</p>
+      {% endif %}
+</div>
+</div>
+
+
+<style>
+  .grid-content{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 30px;
+    align-items: center;
+   }
+  p.aligntext {
+    /* padding-left: 7px; */
+    text-align: justify;
+    /* text-align: center; */
+    letter-spacing: normal;
+}
+.image{
+    width:50%;
+}
+  .image img{
+    width:100%;
+    height:auto;
+}
+  .text{
+     width:50%;
+  }
+  @media screen and (max-width: 749px) {
+  .image img {
+    width: 100%;
+}
+.grid-content{
+    display:block;
+   }
+    .text{
+     width:100%;
+  }
+    .image{
+    width:100%;
+}
+}
+</style>
+
+{% schema %}
+{
+  "name": "A Plus content",
+  "tag": "section",
+  "class": "A-pluse",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "A Pluse content section",
+      "settings": {
+        "title": "A Pluse content section"
+      }    
+    }
+  ]
+}
+{% endschema %}

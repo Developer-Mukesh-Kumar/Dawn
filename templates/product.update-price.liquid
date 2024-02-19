@@ -1,0 +1,23 @@
+{% layout none %}
+
+<span class="price {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}sale{% endif %}">
+  <span class="ProductItem__Price Price Price--highlight Text--subdued ">
+    {{- product.selected_or_first_available_variant.price | money -}}
+  </span>
+  {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price
+  %}
+    <span class="ProductItem__Price Price Price--compareAt Text--subdued">
+      {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+    </span>
+    <span class="ProductMeta__Price Price Text--subdued  saving"
+      >&nbsp; &nbsp;
+      {{-
+        product.selected_or_first_available_variant.compare_at_price
+        | minus: product.selected_or_first_available_variant.price
+        | times: 100
+        | divided_by: product.selected_or_first_available_variant.compare_at_price
+      -}}
+      % Off</span
+    >
+  {% endif %}
+</span>
