@@ -1,4 +1,4 @@
-.list-menu li:last-child span {color: red;}
+.list-menu li:last-child span {color: green;}
 
 .color-Switches ~ .cstmvariantsClick {
   display:none;
